@@ -1,0 +1,930 @@
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Blacklist%20System'),true))()
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Plr = game.Players.LocalPlayer
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local DesignFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local X = Instance.new("TextButton")
+local VHubImageLabel = Instance.new("ImageLabel")
+local Version = Instance.new("TextLabel")
+local WelcomeText = Instance.new("TextLabel")
+local MessageText = Instance.new("TextLabel")
+local By = Instance.new("TextLabel")
+local ProfilePic = Instance.new("ImageLabel")
+local UICornerPic = Instance.new("UICorner")
+local SectionsFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Home = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Scripts = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local RequiredItems = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local GUIS = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Animations = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Commands = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local OtherHubs = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local APIExecutor = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local TextBoxExecutor = Instance.new("TextBox")
+local UICorner_12 = Instance.new("UICorner")
+local Clear = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Execute = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local DiscordInviteLink = Instance.new("TextLabel")
+local OldGUI = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+
+--Properties:
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+MainFrame.Position = UDim2.new(0, 0, 0, 0)
+MainFrame.Size = UDim2.new(0, 387, 0, 239)
+
+UICorner.Parent = MainFrame
+
+DesignFrame.Name = "DesignFrame"
+DesignFrame.Parent = MainFrame
+DesignFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DesignFrame.Size = UDim2.new(0, 387, 0, 30)
+
+UICorner_2.Parent = DesignFrame
+
+X.Name = "X"
+X.Parent = DesignFrame
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.Position = UDim2.new(0.930303454, 0, 0.100000001, 0)
+X.Size = UDim2.new(0, 26, 0, 23)
+X.Font = Enum.Font.FredokaOne
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(255, 255, 255)
+X.TextScaled = true
+X.TextSize = 14.000
+X.TextWrapped = true
+X.MouseButton1Down:connect(function()
+MainFrame:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Open%20Button'),true))()
+end)
+
+VHubImageLabel.Name = "VHubImageLabel"
+VHubImageLabel.Parent = DesignFrame
+VHubImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImageLabel.BackgroundTransparency = 1.000
+VHubImageLabel.Size = UDim2.new(0, 34, 0, 33)
+VHubImageLabel.Image = "rbxassetid://9408318893"
+
+Version.Name = "Version"
+Version.Parent = DesignFrame
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1
+Version.Position = UDim2.new(0.0778552794, 0, 0.100000009, 0)
+Version.Size = UDim2.new(0, 300, 0, 25)
+Version.Font = Enum.Font.GothamSemibold
+Version.Text = "VHub | Home"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 13.000
+Version.TextWrapped = true
+Version.TextXAlignment = Enum.TextXAlignment.Left
+
+WelcomeText.Name = "WelcomeText"
+WelcomeText.Parent = MainFrame
+WelcomeText.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+WelcomeText.BackgroundTransparency = 1.000
+WelcomeText.Position = UDim2.new(0.369509041, 0, 0.388075307, 0)
+WelcomeText.Size = UDim2.new(0, 200, 0, 42)
+WelcomeText.Font = Enum.Font.LuckiestGuy
+WelcomeText.Text = ""
+WelcomeText.TextColor3 = Color3.fromRGB(0, 0, 0)
+WelcomeText.TextScaled = true
+WelcomeText.TextSize = 14.000
+WelcomeText.TextWrapped = true
+
+MessageText.Name = "MessageText"
+MessageText.Parent = MainFrame
+MessageText.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+MessageText.BackgroundTransparency = 1.000
+MessageText.Position = UDim2.new(0.369509041, 0, 0.533305451, 0)
+MessageText.Size = UDim2.new(0, 200, 0, 50)
+MessageText.Font = Enum.Font.GothamSemibold
+MessageText.Text = "Loading Message..."
+MessageText.TextColor3 = Color3.fromRGB(200, 200, 200)
+MessageText.TextScaled = false
+MessageText.TextSize = 14.000
+MessageText.TextWrapped = true
+
+By.Name = "By"
+By.Parent = MainFrame
+By.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+By.BackgroundTransparency = 1.000
+By.Position = UDim2.new(0.279069781, 0, 0.460251153, 0)
+By.Size = UDim2.new(0, 171, 0, 57)
+By.Font = Enum.Font.Cartoon
+By.Text = ""
+By.TextColor3 = Color3.fromRGB(255, 255, 255)
+By.TextSize = 14.000
+By.TextWrapped = true
+
+ProfilePic.Parent = MainFrame
+ProfilePic.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+ProfilePic.Position = UDim2.new(0.539509041, 0, 0.158075307, 0)
+ProfilePic.Size = UDim2.new(0, 50, 0, 50)
+ProfilePic.Image = "http://www.roblox.com/asset/?id=133035324"
+
+UICornerPic.Parent = ProfilePic
+
+SectionsFrame.Name = "SectionsFrame"
+SectionsFrame.Parent = MainFrame
+SectionsFrame.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+SectionsFrame.Position = UDim2.new(0, 0, 0.125523016, 0)
+SectionsFrame.Size = UDim2.new(0, 92, 0, 209)
+
+UICorner_3.Parent = SectionsFrame
+
+Home.Name = "Home"
+Home.Parent = SectionsFrame
+Home.BackgroundColor3 = Color3.fromRGB(100, 100, 100)
+Home.Position = UDim2.new(0.0649999976, 0, 0.0199999996, 0)
+Home.Size = UDim2.new(0, 79, 0, 18)
+Home.Font = Enum.Font.Gotham
+Home.Text = "Home"
+Home.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.TextScaled = true
+Home.TextSize = 14.000
+Home.TextWrapped = true
+Home.MouseButton1Down:connect(function()
+end)
+
+UICorner_4.Parent = Home
+
+Scripts.Name = "Scripts"
+Scripts.Parent = SectionsFrame
+Scripts.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Scripts.Position = UDim2.new(0.0648695678, 0, 0.125215307, 0)
+Scripts.Size = UDim2.new(0, 79, 0, 18)
+Scripts.Font = Enum.Font.Gotham
+Scripts.Text = "Scripts"
+Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.TextScaled = true
+Scripts.TextSize = 14.000
+Scripts.TextWrapped = true
+Scripts.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Scripts%20Page%201'),true))()
+MainFrame:Destroy()
+end)
+
+UICorner_5.Parent = Scripts
+
+RequiredItems.Name = "Required Items"
+RequiredItems.Parent = SectionsFrame
+RequiredItems.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+RequiredItems.Position = UDim2.new(0.0649999976, 0, 0.230000004, 0)
+RequiredItems.Size = UDim2.new(0, 79, 0, 18)
+RequiredItems.Font = Enum.Font.Gotham
+RequiredItems.Text = "Required Items"
+RequiredItems.TextColor3 = Color3.fromRGB(255, 255, 255)
+RequiredItems.TextScaled = true
+RequiredItems.TextSize = 14.000
+RequiredItems.TextWrapped = true
+RequiredItems.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Required%20Items%20Scripts%20Page%201'),true))()
+MainFrame:Destroy()
+end)
+
+UICorner_6.Parent = RequiredItems
+
+GUIS.Name = "GUIS"
+GUIS.Parent = SectionsFrame
+GUIS.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+GUIS.Position = UDim2.new(0.0649999976, 0, 0.340000004, 0)
+GUIS.Size = UDim2.new(0, 79, 0, 18)
+GUIS.Font = Enum.Font.Gotham
+GUIS.Text = "GUIS"
+GUIS.TextColor3 = Color3.fromRGB(255, 255, 255)
+GUIS.TextScaled = true
+GUIS.TextSize = 14.000
+GUIS.TextWrapped = true
+GUIS.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20GUIS%20Scripts%20Page%201'),true))()
+MainFrame:Destroy()
+end)
+
+UICorner_7.Parent = GUIS
+
+Animations.Name = "Animations"
+Animations.Parent = SectionsFrame
+Animations.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Animations.Position = UDim2.new(0.0649999976, 0, 0.449999988, 0)
+Animations.Size = UDim2.new(0, 79, 0, 18)
+Animations.Font = Enum.Font.Gotham
+Animations.Text = "Animations"
+Animations.TextColor3 = Color3.fromRGB(255, 255, 255)
+Animations.TextScaled = true
+Animations.TextSize = 14.000
+Animations.TextWrapped = true
+Animations.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Animations%20Scripts%20Page%201'),true))()
+MainFrame:Destroy()
+end)
+
+UICorner_8.Parent = Animations
+
+Commands.Name = "Commands"
+Commands.Parent = SectionsFrame
+Commands.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Commands.Position = UDim2.new(0.0649999976, 0, 0.560000002, 0)
+Commands.Size = UDim2.new(0, 79, 0, 18)
+Commands.Font = Enum.Font.Gotham
+Commands.Text = "Commands"
+Commands.TextColor3 = Color3.fromRGB(255, 255, 255)
+Commands.TextScaled = true
+Commands.TextSize = 14.000
+Commands.TextWrapped = true
+Commands.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Commands%20Scripts%20Page%201'),true))()
+MainFrame:Destroy()
+end)
+
+UICorner_9.Parent = Commands
+
+OtherHubs.Name = "Other Hubs"
+OtherHubs.Parent = SectionsFrame
+OtherHubs.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+OtherHubs.Position = UDim2.new(0.0649999976, 0, 0.670000017, 0)
+OtherHubs.Size = UDim2.new(0, 79, 0, 18)
+OtherHubs.Font = Enum.Font.Gotham
+OtherHubs.Text = "Other Hubs"
+OtherHubs.TextColor3 = Color3.fromRGB(255, 255, 255)
+OtherHubs.TextScaled = true
+OtherHubs.TextSize = 14.000
+OtherHubs.TextWrapped = true
+OtherHubs.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Other%20Hubs%20Scripts%20Page%201'),true))()
+MainFrame:Destroy()
+end)
+
+UICorner_10.Parent = OtherHubs
+
+APIExecutor.Name = "API Executor"
+APIExecutor.Parent = SectionsFrame
+APIExecutor.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+APIExecutor.Position = UDim2.new(0.0649999976, 0, 0.779999971, 0)
+APIExecutor.Size = UDim2.new(0, 79, 0, 18)
+APIExecutor.Font = Enum.Font.Gotham
+APIExecutor.Text = "API Executor"
+APIExecutor.TextColor3 = Color3.fromRGB(255, 255, 255)
+APIExecutor.TextScaled = true
+APIExecutor.TextSize = 14.000
+APIExecutor.TextWrapped = true
+APIExecutor.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20API%20Executor%20Visibility'),true))()
+MainFrame:Destroy()
+end)
+
+UICorner_11.Parent = APIExecutor
+
+DiscordInviteLink.Name = "DiscordInviteLink"
+DiscordInviteLink.Parent = MainFrame
+DiscordInviteLink.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiscordInviteLink.BackgroundTransparency = 1.000
+DiscordInviteLink.Position = UDim2.new(0.150310073, 0, 0.893765678, 0)
+DiscordInviteLink.Size = UDim2.new(0, 200, 0, 23)
+DiscordInviteLink.Font = Enum.Font.GothamSemibold
+DiscordInviteLink.Text = "dsc.gg/vhub"
+DiscordInviteLink.TextColor3 = Color3.fromRGB(100, 100, 100)
+DiscordInviteLink.TextScaled = true
+DiscordInviteLink.TextSize = 14.000
+DiscordInviteLink.TextWrapped = true
+
+OldGUI.Name = "Settings"
+OldGUI.Parent = MainFrame
+OldGUI.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+OldGUI.Position = UDim2.new(0.803453262, 0, 0.850402296, 0)
+OldGUI.Size = UDim2.new(0, 70, 0, 32)
+OldGUI.Font = Enum.Font.Gotham
+OldGUI.Text = "Settings"
+OldGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
+OldGUI.TextScaled = false
+OldGUI.TextSize = 14.000
+OldGUI.TextWrapped = true
+OldGUI.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubSettings.MainFrame.Visible = true
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = false
+MainFrame:destroy()
+end)
+
+UICorner_15.Parent = OldGUI
+
+-- Scripts:
+
+local function FQBCCV_fake_script() -- ProfilePic.LocalScript 
+	local script = Instance.new('LocalScript', ProfilePic)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	-- Fetch the thumbnail
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	-- Set the ImageLabel's content to the user thumbnail
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+	
+end
+coroutine.wrap(FQBCCV_fake_script)()
+
+if game.Workspace.DarkerTheme.Active == true then
+MainFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DesignFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+SectionsFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+WelcomeText.TextColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
+Scripts.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+RequiredItems.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+GUIS.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Animations.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+Commands.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+OtherHubs.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+APIExecutor.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+OldGUI.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+end
+
+coroutine.wrap(function()
+while wait() do
+WelcomeText.Text = "W"
+wait(0.1)
+WelcomeText.Text = "We"
+wait(0.1)
+WelcomeText.Text = "Wel"
+wait(0.1)
+WelcomeText.Text = "Welc"
+wait(0.1)
+WelcomeText.Text = "Welco"
+wait(0.1)
+WelcomeText.Text = "Welcom"
+wait(0.1)
+WelcomeText.Text = "Welcome"
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+wait(0.1)
+MessageText.Text = "''"
+wait(0.1)
+MessageText.Text = "''B"
+wait(0.1)
+MessageText.Text = "''Br"
+wait(0.1)
+MessageText.Text = "''Bro"
+wait(0.1)
+MessageText.Text = "''Bro W"
+wait(0.1)
+MessageText.Text = "''Bro Wh"
+wait(0.1)
+MessageText.Text = "''Bro Who"
+wait(0.1)
+MessageText.Text = "''Bro Who E"
+wait(0.1)
+MessageText.Text = "''Bro Who Ev"
+wait(0.1)
+MessageText.Text = "''Bro Who Eve"
+wait(0.1)
+MessageText.Text = "''Bro Who Even"
+wait(0.1)
+MessageText.Text = "''Bro Who Even U"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Us"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Use"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses A"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AH"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHu"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub L"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Li"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Lik"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like B"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Br"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro A"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AH"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHu"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub S"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Su"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Suc"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Suck"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -I"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -It"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Its"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsy"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsya"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyab"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyabo"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyaboi"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyaboiv"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyaboivi"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyaboivin"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyaboivinc"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyaboivince"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyaboivincen"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyaboivincent"
+wait(0.1)
+MessageText.Text = "''Bro Who Even Uses AHub Like Bro AHub Sucks''                                                                    -Itsyaboivincentt"
+wait(3)
+MessageText.Text = "''"
+wait(0.1)
+MessageText.Text = "''E"
+wait(0.1)
+MessageText.Text = "''Ex"
+wait(0.1)
+MessageText.Text = "''Exp"
+wait(0.1)
+MessageText.Text = "''Expe"
+wait(0.1)
+MessageText.Text = "''Exper"
+wait(0.1)
+MessageText.Text = "''Experi"
+wait(0.1)
+MessageText.Text = "''Experie"
+wait(0.1)
+MessageText.Text = "''Experien"
+wait(0.1)
+MessageText.Text = "''Experienc"
+wait(0.1)
+MessageText.Text = "''Experience"
+wait(0.1)
+MessageText.Text = "''Experience T"
+wait(0.1)
+MessageText.Text = "''Experience Th"
+wait(0.1)
+MessageText.Text = "''Experience The"
+wait(0.1)
+MessageText.Text = "''Experience The M"
+wait(0.1)
+MessageText.Text = "''Experience The Mo"
+wait(0.1)
+MessageText.Text = "''Experience The Mos"
+wait(0.1)
+MessageText.Text = "''Experience The Most"
+wait(0.1)
+MessageText.Text = "''Experience The Most O"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP H"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hu"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub O"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On M"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mo"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mob"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobi"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobil"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile E"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Ex"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Exe"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Exec"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Execu"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Execut"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executo"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executor"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -I"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -It"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Its"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsy"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsya"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyab"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyabo"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyaboi"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyaboiv"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyaboivi"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyaboivin"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyaboivinc"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyaboivince"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyaboivincen"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyaboivincent"
+wait(0.1)
+MessageText.Text = "''Experience The Most OP Hub On Mobile Executors''                                                           -Itsyaboivincentt"
+wait(3)
+MessageText.Text = "''"
+wait(0.1)
+MessageText.Text = "''V"
+wait(0.1)
+MessageText.Text = "''VH"
+wait(0.1)
+MessageText.Text = "''VHu"
+wait(0.1)
+MessageText.Text = "''VHub"
+wait(0.1)
+MessageText.Text = "''VHub H"
+wait(0.1)
+MessageText.Text = "''VHub Ha"
+wait(0.1)
+MessageText.Text = "''VHub Hav"
+wait(0.1)
+MessageText.Text = "''VHub Have"
+wait(0.1)
+MessageText.Text = "''VHub Have A"
+wait(0.1)
+MessageText.Text = "''VHub Have Al"
+wait(0.1)
+MessageText.Text = "''VHub Have Alo"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot O"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of F"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE A"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE An"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And U"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Us"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Use"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Usef"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Usefu"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful S"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Sc"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scr"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scri"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scrip"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Script"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts F"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts Fo"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For T"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Tr"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Tro"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trol"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Troll"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolli"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trollin"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -I"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -It"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Its"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsy"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsya"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyab"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyabo"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyaboi"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyaboiv"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyaboivi"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyaboivin"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyaboivinc"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyaboivince"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyaboivincen"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyaboivincent"
+wait(0.1)
+MessageText.Text = "''VHub Have Alot Of FE And Useful Scripts For Trolling''                                                                                                                                                -Itsyaboivincentt"
+wait(3)
+MessageText.Text = "''"
+wait(0.1)
+MessageText.Text = "''T"
+wait(0.1)
+MessageText.Text = "''Th"
+wait(0.1)
+MessageText.Text = "''Tha"
+wait(0.1)
+MessageText.Text = "''Than"
+wait(0.1)
+MessageText.Text = "''Thank"
+wait(0.1)
+MessageText.Text = "''Thanks"
+wait(0.1)
+MessageText.Text = "''Thanks F"
+wait(0.1)
+MessageText.Text = "''Thanks Fo"
+wait(0.1)
+MessageText.Text = "''Thanks For"
+wait(0.1)
+MessageText.Text = "''Thanks For U"
+wait(0.1)
+MessageText.Text = "''Thanks For Us"
+wait(0.1)
+MessageText.Text = "''Thanks For Usi"
+wait(0.1)
+MessageText.Text = "''Thanks For Usin"
+wait(0.1)
+MessageText.Text = "''Thanks For Using"
+wait(0.1)
+MessageText.Text = "''Thanks For Using V"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VH"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHu"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name..
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -I"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -It"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Its"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsy"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsya"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyab"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyabo"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyaboi"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyaboiv"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyaboivi"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyaboivin"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyaboivinc"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyaboivince"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyaboivincen"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyaboivincent"
+wait(0.1)
+MessageText.Text = "''Thanks For Using VHub, " ..Plr.Name.. "!''                                                   -Itsyaboivincentt"
+wait(3)
+	end
+end)()
+
+wait(1)
+coroutine.wrap(function()
+while wait() do
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.1
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.2
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.3
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.4
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.5
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.6
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.7
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.8
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.9
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 1
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.9
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.8
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.7
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.6
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.5
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.4
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.3
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.2
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.1
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.1
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.2
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.3
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.4
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.5
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.6
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.7
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.8
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 0.9
+wait(0.1)
+WelcomeText.Text = Plr.Name.. "!"
+WelcomeText.TextTransparency = 1
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.9
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.8
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.7
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.6
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.5
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.4
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.3
+wait(0.1)
+WelcomeText.Text = "Welcome!"
+WelcomeText.TextTransparency = 0.2
+wait(0.1)
+end
+end)()
